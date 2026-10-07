@@ -1,0 +1,23 @@
+[
+  {
+    "id": "alert-001",
+    "source": "synthetic-siem",
+    "timestamp": "2026-10-02T05:40:00Z",
+    "alert_type": "failed_logins",
+    "description": "15 failed logins followed by a successful login.",
+    "src_ip": "203.0.113.10",
+    "username": "j.smith",
+    "hostname": "FIN-LAPTOP-07",
+    "tags": ["authentication", "brute-force"]
+  },
+  {
+    "id": "alert-002",
+    "source": "synthetic-edr",
+    "timestamp": "2026-10-02T05:44:00Z",
+    "alert_type": "suspicious_powershell",
+    "description": "Encoded PowerShell command observed after login.",
+    "username": "j.smith",
+    "hostname": "FIN-LAPTOP-07",
+    "tags": ["powershell", "execution"]
+  }
+]
