@@ -1,0 +1,46 @@
+[
+  {
+    "id": "few-failures",
+    "alert": {
+      "id": "few-failures",
+      "source": "synthetic-training",
+      "timestamp": "2026-01-01T12:00:00Z",
+      "alert_type": "training_event",
+      "description": "Three unsuccessful sign-ins on a training account."
+    },
+    "expected_severity": "low"
+  },
+  {
+    "id": "repeated-failures",
+    "alert": {
+      "id": "repeated-failures",
+      "source": "synthetic-training",
+      "timestamp": "2026-01-01T12:00:00Z",
+      "alert_type": "training_event",
+      "description": "Fifty unsuccessful sign-ins on a training account in one minute."
+    },
+    "expected_severity": "medium"
+  },
+  {
+    "id": "process-review",
+    "alert": {
+      "id": "process-review",
+      "source": "synthetic-training",
+      "timestamp": "2026-01-01T12:00:00Z",
+      "alert_type": "training_event",
+      "description": "PowerShell started on a synthetic training host."
+    },
+    "expected_severity": null
+  },
+  {
+    "id": "training-login-4",
+    "alert": {
+      "id": "training-login-4",
+      "source": "synthetic-training",
+      "timestamp": "2026-01-01T12:00:00Z",
+      "alert_type": "failed_login",
+      "description": "Five unsuccessful sign-ins on a synthetic training account."
+    },
+    "expected_severity": "low"
+  }
+]

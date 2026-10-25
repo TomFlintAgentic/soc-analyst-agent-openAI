@@ -1,0 +1,98 @@
+[
+  {
+    "case_id": "few-failures",
+    "report": {
+      "incident_id": "incident-few-failures",
+      "severity": "low",
+      "confidence": 0.5,
+      "summary": "Three unsuccessful sign-ins on a training account. No external lookup was performed.",
+      "evidence": [
+        "few-failures: Three unsuccessful sign-ins on a training account."
+      ],
+      "uncertainties": [
+        "Malicious intent is not established by this observation."
+      ],
+      "iocs": [],
+      "attack_techniques": [],
+      "recommended_actions": [
+        "Ask an analyst to review the supplied alert."
+      ],
+      "requires_human_review": true,
+      "containment_status": "not_performed"
+    },
+    "claimed_tool_sources": [],
+    "observed_tool_sources": []
+  },
+  {
+    "case_id": "repeated-failures",
+    "report": {
+      "incident_id": "incident-repeated-failures",
+      "severity": "medium",
+      "confidence": 0.5,
+      "summary": "Fifty unsuccessful sign-ins on a training account in one minute. No external lookup was performed.",
+      "evidence": [
+        "repeated-failures: Fifty unsuccessful sign-ins on a training account in one minute."
+      ],
+      "uncertainties": [
+        "Malicious intent is not established by this observation."
+      ],
+      "iocs": [],
+      "attack_techniques": [],
+      "recommended_actions": [
+        "Ask an analyst to review the supplied alert."
+      ],
+      "requires_human_review": true,
+      "containment_status": "not_performed"
+    },
+    "claimed_tool_sources": [],
+    "observed_tool_sources": []
+  },
+  {
+    "case_id": "process-review",
+    "report": {
+      "incident_id": "incident-process-review",
+      "severity": "medium",
+      "confidence": 0.5,
+      "summary": "PowerShell started on a synthetic training host. No external lookup was performed.",
+      "evidence": [
+        "process-review: PowerShell started on a synthetic training host."
+      ],
+      "uncertainties": [
+        "Malicious intent is not established by this observation."
+      ],
+      "iocs": [],
+      "attack_techniques": [],
+      "recommended_actions": [
+        "Ask an analyst to review the supplied alert."
+      ],
+      "requires_human_review": true,
+      "containment_status": "not_performed"
+    },
+    "claimed_tool_sources": [],
+    "observed_tool_sources": []
+  },
+  {
+    "case_id": "training-login-4",
+    "report": {
+      "incident_id": "incident-training-login-4",
+      "severity": "low",
+      "confidence": 0.5,
+      "summary": "Five unsuccessful sign-ins warrant analyst review. No external lookup was performed.",
+      "evidence": [
+        "training-login-4: five unsuccessful sign-ins were reported."
+      ],
+      "uncertainties": [
+        "The cause of the failed sign-ins is unknown."
+      ],
+      "iocs": [],
+      "attack_techniques": [],
+      "recommended_actions": [
+        "Ask an analyst to review the sign-in records."
+      ],
+      "requires_human_review": true,
+      "containment_status": "not_performed"
+    },
+    "claimed_tool_sources": [],
+    "observed_tool_sources": []
+  }
+]

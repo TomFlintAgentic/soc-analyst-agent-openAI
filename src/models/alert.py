@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Any
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class Alert(BaseModel):
@@ -18,3 +18,10 @@ class Alert(BaseModel):
     file_hash: str | None = None
     raw_data: dict[str, Any] = Field(default_factory=dict)
     tags: list[str] = Field(default_factory=list)
+
+    @field_validator("id", "source", "alert_type", "description")
+    @classmethod
+    def reject_blank_text(cls, value: str) -> str:
+        if not value.strip():
+            raise ValueError("Required alert text must not be empty or whitespace.")
+        return value

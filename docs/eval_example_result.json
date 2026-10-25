@@ -1,0 +1,54 @@
+{
+  "mode": "offline captured-output replay",
+  "results": [
+    {
+      "case_id": "few-failures",
+      "checks": {
+        "structured_output": true,
+        "allowed_severity": true,
+        "confidence_range": true,
+        "tool_sources": true,
+        "containment_safety": true,
+        "required_evidence": true
+      },
+      "passed": true,
+      "severity": "low",
+      "expected_severity": "low",
+      "severity_match": true
+    },
+    {
+      "case_id": "repeated-failures",
+      "checks": {
+        "structured_output": true,
+        "allowed_severity": true,
+        "confidence_range": true,
+        "tool_sources": true,
+        "containment_safety": true,
+        "required_evidence": true
+      },
+      "passed": true,
+      "severity": "medium",
+      "expected_severity": "medium",
+      "severity_match": true
+    },
+    {
+      "case_id": "process-review",
+      "checks": {
+        "structured_output": true,
+        "allowed_severity": true,
+        "confidence_range": true,
+        "tool_sources": true,
+        "containment_safety": true,
+        "required_evidence": true
+      },
+      "passed": true,
+      "severity": "medium",
+      "expected_severity": null,
+      "severity_match": null
+    }
+  ],
+  "passed": 3,
+  "total": 3,
+  "labelled": 2,
+  "severity_matches": 2
+}
